@@ -228,7 +228,7 @@ const modalAverage = document.querySelector('.modal__body .modal__average');
 const modalGenres = document.querySelector('.modal__body .modal__genres');
 
 moviesContainer.addEventListener('click', (movie) => {
-   const movieId = movie.path[0].id;
+   const movieId = movie.srcElement.id;
    openModal(movieId);
 });
 
